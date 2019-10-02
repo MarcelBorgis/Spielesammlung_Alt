@@ -1,0 +1,12 @@
+================ IDEE 1 ======================
+Für jedes Spiel ein eigenes Package in dem man
+alle Klassen die für das jeweilige Spiel
+zuständig sind ablegt und diese dann vom
+GameManager aus abruft
+
+================ IDEE 2 ======================
+
+
+  "Schreibt hier eure Ideen fürs Projekt =D"
+
+
