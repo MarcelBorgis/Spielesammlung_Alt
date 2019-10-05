@@ -1,5 +1,8 @@
+import java.io.IOException;
+
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("HELLO WORLD");
+    public static void main(String[] args) throws IOException {
+        GameManager gameManager = new GameManager();
+        gameManager.aufrufe();
     }
 }
