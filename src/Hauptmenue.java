@@ -6,20 +6,19 @@ import java.awt.event.ActionListener;
 
 public class Hauptmenue {
 
-    Listener listener = new Listener();
+    private JFrame frame = new JFrame();
+    private JPanel mainPanel = new JPanel(new FlowLayout());
+    private JButton button1 = new JButton();
+    private Container container = new Container();
 
-    JFrame frame = new JFrame();
-    JPanel mainPanel = new JPanel(new FlowLayout());
-    JButton button1 = new JButton();
-    Container container = new Container();
+    private ImageIcon image = new ImageIcon("Unbenannt.png");
+    private JLabel label = new JLabel(image);
+    private JButton spiel1 = new JButton();
+    private JButton spiel2 = new JButton();
+    private JButton spiel3 = new JButton();
+    private JButton exit = new JButton();
 
-    ImageIcon image = new ImageIcon("Unbenannt.png");
-    JLabel label = new JLabel(image);
-    JButton spiel1 = new JButton();
-    JButton spiel2 = new JButton();
-    JButton spiel3 = new JButton();
-    JButton exit = new JButton();
-    public void hauptmenue() {
+    void hauptmenue() {
 
 
         spiel1.setText("Tik Tak Toe");
@@ -29,6 +28,7 @@ public class Hauptmenue {
         spiel1.setBounds(200,200,10,10);
         spiel1.setVisible(true);
         spiel1.setText("Tik Tak Toe");
+        spiel1.addActionListener(e -> System.out.println("Tik Tak Toe"));
 
         spiel2.setForeground(Color.white);
         spiel2.setBackground(Color.black);
@@ -36,6 +36,7 @@ public class Hauptmenue {
         spiel2.setBounds(200,200,10,10);
         spiel2.setVisible(true);
         spiel2.setText("Jump and Run");
+        spiel2.addActionListener(e -> System.out.println("Jump and Run"));
 
         spiel3.setForeground(Color.white);
         spiel3.setBackground(Color.black);
@@ -43,6 +44,7 @@ public class Hauptmenue {
         spiel3.setBounds(200,200,10,10);
         spiel3.setVisible(true);
         spiel3.setText("Astroid");
+        spiel3.addActionListener(e -> System.out.println("Astroid"));
 
         exit.setForeground(Color.RED);
         exit.setBackground(Color.black);
@@ -50,6 +52,7 @@ public class Hauptmenue {
         exit.setBounds(200,200,10,10);
         exit.setVisible(true);
         exit.setText("EXIT");
+        exit.addActionListener(e -> System.exit(420));
 
         label.setText("Hauptmenue");
         label.setBounds(200,0,100,100);
@@ -73,9 +76,6 @@ public class Hauptmenue {
         frame.setResizable(false);
         frame.setVisible(true);
         frame.add(mainPanel);
-
-        listener.addListener();
-
     }
 
     public void setSpiel1Listener(ActionListener action){
