@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 
 
 public class Hauptmenue {
+    private GameManager gameManager = new GameManager();
 
     private JFrame frame = new JFrame();
     private JPanel mainPanel = new JPanel(new FlowLayout());
@@ -28,7 +29,7 @@ public class Hauptmenue {
         spiel1.setBounds(200,200,10,10);
         spiel1.setVisible(true);
         spiel1.setText("Tik Tak Toe");
-        spiel1.addActionListener(e -> System.out.println("Tik Tak Toe"));
+        spiel1.addActionListener(e -> gameManager.callTikTakToe());
 
         spiel2.setForeground(Color.white);
         spiel2.setBackground(Color.black);
