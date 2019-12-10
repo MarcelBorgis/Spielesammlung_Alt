@@ -39,12 +39,11 @@ public class Mains extends Application {
     private boolean canJump = true;
     private boolean punkte = false;
 
-    private Image bloecke = new Image("File:C:\\Eclipse\\workspace\\Spiele\\src\\images\\bloecke.png");
-    private Image coinblocke = new Image("File:C:\\Eclipse\\workspace\\Spiele\\src\\images\\Coinblock.png");
-    private Image marioR = new Image("File:C:\\Eclipse\\workspace\\Spiele\\src\\images\\Mario_klein_rechts0.png");
-    private Image marioL = new Image("File:C:\\Eclipse\\workspace\\Spiele\\src\\images\\Mario_klein_links0.png");
-    private Image lavablock = new Image("File:C:\\Eclipse\\workspace\\Spiele\\src\\images\\Lava.png");
-    private Image lavablock2 = new Image("File:C:\\Eclipse\\workspace\\Spiele\\src\\images\\Lava2.png");
+    private Image bloecke = new Image("File:C:\\Workspace\\Spielesammlung_NEU\\src\\images\\bloecke.png");
+    private Image coinblocke = new Image("File:C:\\Workspace\\Spielesammlung_NEU\\src\\images\\Coinblock.png");
+    private Image marioR = new Image("File:C:\\Workspace\\Spielesammlung_NEU\\src\\images\\Mario_klein_rechts0.png");
+    private Image lavablock = new Image("File:C:\\Workspace\\Spielesammlung_NEU\\src\\images\\Lava.png");
+    private Image lavablock2 = new Image("File:C:\\Workspace\\Spielesammlung_NEU\\src\\images\\Lava2.png");
     private ImagePattern imagePatternBloecke = new ImagePattern(bloecke);
     private ImagePattern imagePatterncoin = new ImagePattern(coinblocke);
     private ImagePattern imagePatternlavablock = new ImagePattern(lavablock);
@@ -227,7 +226,7 @@ public class Mains extends Application {
         scene.setOnKeyPressed(event -> keys.put(event.getCode(), true));
         scene.setOnKeyReleased(event -> keys.put(event.getCode(), false));
         primaryStage.setTitle("Jump and Run");
-        primaryStage.getIcons().add(new Image("File:C:\\Eclipse\\workspace\\Spiele\\src\\images\\Mario_klein_links0.png"));
+        primaryStage.getIcons().add(new Image("File:C:\\Workspace\\Spielesammlung_NEU\\src\\images\\Mario_klein_rechts0.png"));
         primaryStage.setScene(scene);
         primaryStage.show();
 
