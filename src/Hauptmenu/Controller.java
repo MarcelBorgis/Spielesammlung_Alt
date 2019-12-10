@@ -1,5 +1,6 @@
+package Hauptmenu;
 
-import LogIn.Loginklasse;
+import LogIn.Main2;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
 
@@ -18,7 +19,7 @@ public class Controller {
     }
 
     private Main2 spiele = new Main2();
-    private Loginklasse login = new Loginklasse();
+    private Hauptmenu Hauptmenu = new Hauptmenu();
 
     @FXML
     private void jumpnrunfenster() throws IOException {
@@ -39,6 +40,5 @@ public class Controller {
 
     @FXML
     private void anmelden() throws Exception {
-        login.starten();
     }
 }

@@ -50,7 +50,7 @@ public void starten(){
         Canvas canvas=new Canvas(width,height);
         GraphicsContext gc=canvas.getGraphicsContext2D();
 
-        stage.getIcons().add(new Image("https://image.winudf.com/v2/image1/Y29tLmNvZGFtYXN0ZXJzLnBvbmdfaWNvbl8xNTQ3MzEzNzMzXzAwOA/icon.png?w=170&fakeurl=1"));
+        stage.getIcons().add(new Image("File:C:\\Eclipse\\workspace\\Spielesammlung\\src\\images\\icon.png"));
         stage.setResizable(false);
 
         //JavaFX Timeline = animation definiert von Keyframe und Duration

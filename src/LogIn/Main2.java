@@ -1,5 +1,6 @@
+package LogIn;
+
 import JumpandRun.Mains;
-import LogIn.Reg;
 import Pong.Pong;
 import TikTakToe.TikTakToe;
 import javafx.application.Application;
@@ -15,21 +16,13 @@ public class Main2 extends Application {
     private TikTakToe tikTakToe = new TikTakToe();
     private Mains jumpNRuns = new Mains();
     private Pong ponge = new Pong();
-    private Reg reg = new Reg();
-
-    public static void run(String... args) {
+    public static void run(String...args ){
         launch(args);
     }
-
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-
-        String passswort = "Muhammed-Wolke1";
-        reg.run(passswort);
-
-
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage();
 

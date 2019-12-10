@@ -1,5 +1,4 @@
-package LogIn;
-
+package Hauptmenu;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,11 +8,12 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 
-public class Loginklasse extends Application {
+
+public class Hauptmenu extends Application {
     private Stage stage = new Stage();
 
-   public void starten() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("LoginFenster.fxml"));
+    public void starten() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
 
         Scene scene = new Scene(root);
         stage.setScene(scene);
