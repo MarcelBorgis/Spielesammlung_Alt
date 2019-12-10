@@ -25,7 +25,8 @@ public class Reg {
             sicherheitsstufe++;
         }
 
-        System.out.println("Ihr passwort erreichte " + sicherheitsstufe + " von 5 Sicherheitspunkten");
+        System.out.println("Ihr passwort erreichte " + sicherheitsstufe + " von 5" +
+                " Sicherheitspunkten");
 
         return sicherheitsstufe;
     }
@@ -125,5 +126,4 @@ public class Reg {
 
         return sicher;
     }
-
 }
