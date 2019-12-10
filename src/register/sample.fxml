@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="57.0" layoutY="14.0" text="Registrieren">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <TextField layoutX="83.0" layoutY="100.0" promptText="Benutzername" style="-fx-background-color: transparent;">
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </TextField>
+      <TextField layoutX="83.0" layoutY="259.0" promptText="Alter" style="-fx-background-color: transparent;">
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </TextField>
+      <TextField layoutX="83.0" layoutY="293.0" promptText="Geschlecht" style="-fx-background-color: transparent;">
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </TextField>
+      <TextField layoutX="83.0" layoutY="225.0" promptText="E-Mail bestätigen" style="-fx-background-color: transparent;">
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </TextField>
+      <TextField layoutX="83.0" layoutY="194.0" promptText="E-Mail" style="-fx-background-color: transparent;">
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </TextField>
+      <Button layoutX="116.0" layoutY="338.0" mnemonicParsing="false" style="-fx-background-color: transpraent;" text="Weiter" />
+      <PasswordField layoutX="83.0" layoutY="131.0" promptText="Passwort" style="-fx-background-color: transparent;">
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </PasswordField>
+      <PasswordField layoutX="83.0" layoutY="163.0" promptText="Passwort bestätigen" style="-fx-background-color: transparent;">
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </PasswordField>
+   </children>
+</AnchorPane>

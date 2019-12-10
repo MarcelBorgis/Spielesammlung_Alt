@@ -6,23 +6,12 @@
   <component name="ProjectPlainTextFileTypeManager">
     <file url="file://$PROJECT_DIR$/src/images/bloecke.png" />
     <file url="file://$PROJECT_DIR$/src/images/Coinblock.png" />
-    <file url="file://$PROJECT_DIR$/src/images/Hintergrundbild.png" />
     <file url="file://$PROJECT_DIR$/src/images/icon.png" />
     <file url="file://$PROJECT_DIR$/src/images/Lava.png" />
     <file url="file://$PROJECT_DIR$/src/images/Lava2.png" />
-    <file url="file://$PROJECT_DIR$/src/images/Mario_klein_links0.png" />
-    <file url="file://$PROJECT_DIR$/src/images/Mario_klein_links1.png" />
-    <file url="file://$PROJECT_DIR$/src/images/Mario_klein_links2.png" />
-    <file url="file://$PROJECT_DIR$/src/images/Mario_klein_links3.png" />
-    <file url="file://$PROJECT_DIR$/src/images/Mario_klein_links_ sprung4.png" />
     <file url="file://$PROJECT_DIR$/src/images/Mario_klein_rechts0.png" />
-    <file url="file://$PROJECT_DIR$/src/images/Mario_klein_rechts1.png" />
-    <file url="file://$PROJECT_DIR$/src/images/Mario_klein_rechts2.png" />
-    <file url="file://$PROJECT_DIR$/src/images/Mario_klein_rechts3.png" />
-    <file url="file://$PROJECT_DIR$/src/images/Mario_klein_rechts_sprung4.png" />
-    <file url="file://$PROJECT_DIR$/src/images/Sprites.png" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_13_PREVIEW" default="false" project-jdk-name="13" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
