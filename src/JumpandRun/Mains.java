@@ -92,6 +92,7 @@ public class Mains extends Application {
             }
         });
 
+        appRoot.setMinSize(1500,800);
         appRoot.getChildren().addAll(gameRoot, uiRoot);
     }
 
