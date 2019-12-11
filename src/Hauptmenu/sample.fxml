@@ -61,27 +61,6 @@
                   <Font size="64.0"/>
               </font>
            </Label>
-           <MenuBar layoutY="2.0">
-               <menus>
-                   <Menu mnemonicParsing="false" text="Account">
-                       <items>
-                           <MenuItem fx:id="anmeldungsfenster" mnemonicParsing="false" onAction="#anmelden"
-                                     text="Anmelden"/>
-                           <MenuItem mnemonicParsing="false" text="Registrieren"/>
-                       </items>
-                   </Menu>
-                   <Menu mnemonicParsing="false" text="Einstellung">
-                       <items>
-                           <MenuItem mnemonicParsing="false" text="Delete"/>
-                       </items>
-                   </Menu>
-                   <Menu mnemonicParsing="false" text="Über uns">
-                       <items>
-                           <MenuItem mnemonicParsing="false" text="About"/>
-                       </items>
-                   </Menu>
-               </menus>
-           </MenuBar>
        </AnchorPane>
    </children>
 </GridPane>

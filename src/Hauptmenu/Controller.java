@@ -1,6 +1,5 @@
 package Hauptmenu;
 
-import LogIn.Main2;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
 
@@ -18,27 +17,23 @@ public class Controller {
         stage.close();
     }
 
-    private Main2 spiele = new Main2();
-    private Hauptmenu Hauptmenu = new Hauptmenu();
+    private Hauptmenu hauptmenu = new Hauptmenu();
 
     @FXML
     private void jumpnrunfenster() throws IOException {
 
-        spiele.jumpNRun();
+        hauptmenu.jumpNRun();
 
     }
 
     @FXML
     private void tiktaktoefenster() throws Exception {
-        spiele.tikTakToegame();
+        hauptmenu.tikTakToegame();
     }
 
     @FXML
     private void pongfenster() throws Exception {
-        spiele.pong();
+        hauptmenu.pong();
     }
 
-    @FXML
-    private void anmelden() throws Exception {
-    }
 }
