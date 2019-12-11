@@ -11,16 +11,14 @@ import java.io.IOException;
 public class Register extends Application {
 
     public void starten() throws IOException {
-    Stage primaryStage = new Stage();
+        Stage primaryStage = new Stage();
 
-    Parent root = FXMLLoader.load(getClass().getResource("register.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("register.fxml"));
         primaryStage.setTitle("Registrieren");
-        primaryStage.setScene(new
-
-    Scene(root, 300,300));
-        primaryStage.setResizable(true);
+        primaryStage.setScene(new Scene(root, 300, 300));
+        primaryStage.setResizable(false);
         primaryStage.show();
-}
+    }
 
     @Override
     public void start(Stage primaryStage) throws Exception {

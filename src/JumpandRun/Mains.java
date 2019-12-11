@@ -10,14 +10,13 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.ImagePattern;
 import javafx.stage.Stage;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Mains extends Application {
 
     private GameDialog dialog = new GameDialog();
-    private Stage primaryStage = new Stage();
+    public static Stage primaryStage = new Stage();
 
     private int levelWidth;
     public int scoreP1 = 0;
@@ -273,6 +272,9 @@ public class Mains extends Application {
         this.scoreP1 = scoreP1;
     }
 
+    public Stage getPrimaryStage() {
+        return primaryStage;
+    }
 }
 
 

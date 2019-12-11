@@ -1,16 +1,15 @@
 package LogIn;
 
 import Hauptmenu.Hauptmenu;
+import JumpandRun.Mains;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.stage.Stage;
 import register.Register;
 
 import java.io.IOException;
 
 public class MainController {
-    Stage stage = new Stage();
     private boolean richtig = false;
     private Hauptmenu haputmenu = new Hauptmenu();
     private Register register = new Register();
@@ -19,7 +18,7 @@ public class MainController {
     @FXML
     private Button weiterleitungzumHauptmenu;
     @FXML
-    private  Button regi;
+    private Button regi;
     @FXML
     private javafx.scene.control.TextField txtBenutzername;
     @FXML
@@ -51,13 +50,15 @@ public class MainController {
 
     public void haupt() throws IOException {
         if (richtig) {
-            stage.close();
             haputmenu.starten();
-        }if (!richtig){
-            
+            Main2.stage.close();
+        }
+        if (!richtig) {
+
         }
     }
+
     public void register() throws IOException {
-register.starten();
+        register.starten();
     }
 }
