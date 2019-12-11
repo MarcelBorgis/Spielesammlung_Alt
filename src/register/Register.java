@@ -17,7 +17,7 @@ public class Register extends Application {
         primaryStage.setTitle("Registrieren");
         primaryStage.setScene(new
 
-    Scene(root, 300,400));
+    Scene(root, 300,300));
         primaryStage.setResizable(true);
         primaryStage.show();
 }
