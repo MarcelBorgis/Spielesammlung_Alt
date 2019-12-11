@@ -66,6 +66,7 @@ public class TikTakToe extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        primaryStage.setTitle("TikTakToe");
         primaryStage.setScene(new Scene(createContent()));
         primaryStage.show();
     }

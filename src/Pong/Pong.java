@@ -23,7 +23,7 @@ public class Pong extends Application {
 
 
     private static final int width = 800;
-    private static final int height = 600;
+    private static final int height = 800;
     private static final int PLAYER_HEIGHT = 100;
     private static final int PLAYER_WIDTH = 15;
     private static final double BALL_R = 15;
