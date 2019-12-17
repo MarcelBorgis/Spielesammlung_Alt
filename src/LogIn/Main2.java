@@ -21,7 +21,7 @@ stage = primaryStage;
 
 
         primaryStage.setTitle("Anmeldung");
-        primaryStage.setMaxHeight(400);
+        primaryStage.setMaxHeight(500);
         primaryStage.setMaxWidth(600);
         primaryStage.setResizable(false);
 

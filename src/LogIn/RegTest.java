@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RegTest {
 
-    Reg reg = new Reg();
+    Reg Reg = new Reg();
 
     private String passwort = "^&b.`N[cv{nEx.qX?L?wp*w;GVDHfP-dG;pA;+<hhUhabd$h}kn%MQF6fv[\"LFtNC<N=-hB%=p9a)(94{VCFydwwa" +
             "@=8ucvPa!p,E[.!c72cLYkHn(j4waa$`(#_E}g=(WLjZZvPy]Du[_FW=Kc~FZwYY[5N<eP[P}_7Fm'[;fA?c?dwadwwsL" +
@@ -30,41 +30,46 @@ class RegTest {
             "P~^;kv<u/}cy8Yb#`>6E^dEk77KV:dGJ<&t/8%XE\"3vX5K68pKg#AZg<C=C@ZPK[kWt`-&CjPbGaXvm->S3mw.3&x%sV" +
             "&ny3rT(`U)?pWLN^7B5'Tcfb\"?y!aq;Dk2X)6KHp4y\"jF_f[[Y[sRPwr[#W4Pqnm#M8gLn*4Hs$&<gypasd,/G}(gCY" +
             "m}gejth/JvPEd}k6e$,T;8'PMbXK)raGZF&Ja9gMMEB#m+KRYGvh?)BU[*;Hbkt&mqPE=KL,:TB}rGGD;]+s(u^p2#>)&";
-    ;
+
 
     @Test
-    public void laengenTest() {
+
+public void laengenTest(){
 
 
-        assertEquals(true, reg.laenge(passwort));
-        assertEquals(true, reg.laenge("12345678"));
-        assertEquals(false, reg.laenge("1234567"));
-        assertEquals(false, reg.laenge(""));
+        assertTrue(Reg.laenge(passwort));
+        assertTrue(Reg.laenge("12345678"));
+        assertFalse(Reg.laenge("1234567"));
+        assertFalse(Reg.laenge(""));
+
     }
 
     @Test
-    public void großbuchstabenTest() {
-        assertEquals(true, reg.großbuchstaben(passwort));
-        assertEquals(true, reg.großbuchstaben("MuhammeD"));
-        assertEquals(false, reg.großbuchstaben("Vincent-4132"));
-        assertEquals(false, reg.großbuchstaben("-+"));
+    public void grossbuchstabenTest() {
+
+        assertTrue(Reg.großbuchstaben(passwort));
+        assertTrue(Reg.großbuchstaben("MuhammeD"));
+        assertFalse(Reg.großbuchstaben("Vincent-4132"));
+        assertFalse(Reg.großbuchstaben("-+"));
+
+
 
     }
 
     @Test
     public void kleinbuchstabenTest() {
-        assertEquals(true, reg.kleinbuchstaben(passwort));
-        assertEquals(true, reg.kleinbuchstaben("Schmidt"));
-        assertEquals(false, reg.kleinbuchstaben("BORGIs.-1646"));
-        assertEquals(false, reg.kleinbuchstaben("*/"));
+        assertTrue(Reg.kleinbuchstaben(passwort));
+        assertTrue(Reg.kleinbuchstaben("Schmidt"));
+        assertFalse(Reg.kleinbuchstaben("BORGIs.-1646"));
+        assertFalse(Reg.kleinbuchstaben("*/"));
     }
 
     @Test
     public void sonderzeichenTest(){
-        assertEquals(true, reg.sonderzeichen(passwort));
-        assertEquals(true, reg.sonderzeichen("Yannick-123"));
-        assertEquals(false, reg.sonderzeichen("ufh16544"));
-        assertEquals(false, reg.sonderzeichen("7987"));
+        assertTrue(Reg.sonderzeichen(passwort));
+        assertTrue(Reg.sonderzeichen("Yannick-123"));
+        assertFalse(Reg.sonderzeichen("ufh16544"));
+        assertFalse(Reg.sonderzeichen("7987"));
     }
 
 }

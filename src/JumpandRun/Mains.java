@@ -21,12 +21,12 @@ public class Mains extends Application {
     private int levelWidth;
     public int scoreP1 = 0;
 
-    private HashMap<KeyCode, Boolean> keys = new HashMap<KeyCode, Boolean>();
+    private HashMap<KeyCode, Boolean> keys = new HashMap<>();
 
-    private ArrayList<Node> platforms = new ArrayList<Node>();
-    private ArrayList<Node> coins = new ArrayList<Node>();
-    private ArrayList<Node> lavapla = new ArrayList<Node>();
-    private ArrayList<Node> lava = new ArrayList<Node>();
+    private ArrayList<Node> platforms = new ArrayList<>();
+    private ArrayList<Node> coins = new ArrayList<>();
+    private ArrayList<Node> lavapla = new ArrayList<>();
+    private ArrayList<Node> lava = new ArrayList<>();
 
     private Pane appRoot = new Pane();
     private Pane gameRoot = new Pane();
@@ -51,6 +51,9 @@ public class Mains extends Application {
 
     private boolean dialogEvent = false;
     private boolean running = true;
+
+
+    //Level bearbeiten
 
     private void initContent() {
 
@@ -94,7 +97,7 @@ public class Mains extends Application {
         appRoot.setMinSize(1500,800);
         appRoot.getChildren().addAll(gameRoot, uiRoot);
     }
-
+// Steuerung des Charakters
     private void update() {
         if (isPressed(KeyCode.W) && player.getTranslateY() >= 5) {
 
@@ -256,7 +259,7 @@ public class Mains extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) {
 
     }
 

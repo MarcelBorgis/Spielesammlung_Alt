@@ -1,13 +1,12 @@
-============= Aufgaben Yannick ===============
+============= Aufgaben Yannick ==========
 
-Frondend mit Backend verbinden
+Anmeldungsfesnter nach anmeldung schließen  
 
 ============ Aufgaben Bulut =================
 
-Loginbildschirm mit Hauptbildschirm verbinden
-Tamara 
+datenbank
+Daten im ANmeldungsfenster
 
 =========== Aufgaben Taymayray ================
 
-Benutzernamen checken
 
