@@ -3,36 +3,30 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #841439;"
-            xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="LogIn.MainController">
-   <Button fx:id="regi" centerShape="false" layoutX="452.0" layoutY="262.0" mnemonicParsing="false"
-           mouseTransparent="true" onAction="#register" prefHeight="25.0" prefWidth="128.0"
-           style="-fx-background-insets: #c6b2c1;" text="Registrieren"/>
-   <PasswordField fx:id="txtPasswort" layoutX="317.0" layoutY="221.0" onAction="#Login" prefHeight="25.0"
-                  prefWidth="263.0" promptText="Passwort"/>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #841439;" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LogIn.MainController">
+   <TextField fx:id="txtBenutzername" layoutX="317.0" layoutY="168.0" prefHeight="25.0" prefWidth="263.0" promptText="Benutzer" />
+   <PasswordField fx:id="txtPasswort" layoutX="317.0" layoutY="221.0" onAction="#Login" prefHeight="25.0" prefWidth="263.0" promptText="Passwort" />
    <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="279.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
-      <Image url="@../images/Schloss.png"/>
+      <Image url="@../images/Schloss.png" />
    </ImageView>
    <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="280.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
 
-      <Image url="@../images/Benutzer.png"/>
+      <Image url="@../images/Benutzer.png" />
    </ImageView>
-   <Button fx:id="weiterleitungzumHauptmenu" layoutX="317.0" layoutY="262.0" mnemonicParsing="false" onAction="#haupt"
-           prefHeight="25.0" prefWidth="128.0" text="Anmelden"/>
-   <Label fx:id="anmeldungen" layoutX="163.0" layoutY="34.0" prefHeight="17.0" prefWidth="282.0" text="Anmeldung"
-          textFill="WHITE">
+   <Button fx:id="weiterleitungzumHauptmenu" layoutX="317.0" layoutY="262.0" mnemonicParsing="false" onAction="#haupt" prefHeight="25.0" prefWidth="128.0" text="Anmelden" />
+   <Button fx:id="regi" centerShape="false" layoutX="452.0" layoutY="262.0" mnemonicParsing="false" mouseTransparent="true" onAction="#register" prefHeight="25.0" prefWidth="128.0" style="-fx-background-insets: #c6b2c1;" text="Registrieren" />
+   <Label fx:id="anmeldungen" layoutX="163.0" layoutY="34.0" prefHeight="17.0" prefWidth="282.0" text="Anmeldung" textFill="WHITE">
       <font>
-         <Font name="Arial Unicode MS" size="54.0"/>
+         <Font name="Arial Unicode MS" size="54.0" />
       </font>
    </Label>
-   <ImageView fitHeight="315.0" fitWidth="308.0" layoutX="-28.0" layoutY="59.0" pickOnBounds="true"
-              preserveRatio="true">
-      <Image url="@../images/Logo_msg_DAVID_1080x1080px.png"/>
+   <ImageView fitHeight="315.0" fitWidth="308.0" layoutX="-28.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../images/Logo_msg_DAVID_1080x1080px.png" />
    </ImageView>
 </AnchorPane>
