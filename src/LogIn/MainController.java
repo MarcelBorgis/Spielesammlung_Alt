@@ -1,7 +1,6 @@
 package LogIn;
 
 import Hauptmenu.Hauptmenu;
-import JumpandRun.Mains;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -38,6 +37,13 @@ public class MainController {
                 anmeldungen.setText("Anmeldung fehlgeschlagen");
                 richtig = false;
                 if (txtBenutzername.getText().equals("Tamara") && txtPasswort.getText().equals("passwort")) {
+                    anmeldungen.setText("Anmeldung erfolgreich");
+                    richtig = true;
+                } else {
+                    anmeldungen.setText("Anmeldung fehlgeschlagen");
+                    richtig = false;
+                }
+                if (txtBenutzername.getText().equals("Marcel") && txtPasswort.getText().equals("passwort")) {
                     anmeldungen.setText("Anmeldung erfolgreich");
                     richtig = true;
                 } else {
