@@ -1,7 +1,4 @@
 package LogIn;
-//import Pong.Pong;
-//import TikTakToe.TikTakToe;
-
 
 public class Main  {
 
