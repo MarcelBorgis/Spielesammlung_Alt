@@ -120,7 +120,7 @@ public class Mains extends Application {
         }
 
         movePlayerY((int) playerVelocity.getY());
-
+//Block aktivität
         for (Node coin : coins) {
             if (player.getBoundsInParent().intersects(coin.getBoundsInParent())) {
                 System.out.println("Block1");
@@ -138,7 +138,7 @@ public class Mains extends Application {
         }
 
     }
-
+//Boden
     private void movePlayerX(int value) {
         boolean movingRight = value > 0;
 
@@ -159,7 +159,7 @@ public class Mains extends Application {
             player.setTranslateX(player.getTranslateX() + (movingRight ? 1 : -1));
         }
     }
-
+//Gravität
     private void movePlayerY(int value) {
         boolean movingDown = value > 0;
 
@@ -185,7 +185,6 @@ public class Mains extends Application {
                         if (player.getTranslateY() + 40 == punkte.getTranslateY()) {
                             player.setTranslateY(player.getTranslateY() - 1);
                             canJump = true;
-                            scoreP1++;
                             return;
                         }
                     } else {
@@ -205,7 +204,7 @@ public class Mains extends Application {
             canJump = false;
         }
     }
-
+//Spieler erstellen
     private Node createEntity(int x, int y, int w, int h, ImagePattern imagePattern) {
         javafx.scene.shape.Rectangle entity = new javafx.scene.shape.Rectangle(w, h);
         entity.setTranslateX(x);
@@ -232,7 +231,7 @@ public class Mains extends Application {
         primaryStage.getIcons().add(new Image("File:C:\\Eclipse\\workspace\\Spielesammlung\\src\\images\\Mario_klein_rechts0.png"));
         primaryStage.setScene(scene);
         primaryStage.show();
-
+//Events
         AnimationTimer timer = new AnimationTimer() {
             @Override
             public void handle(long now) {
