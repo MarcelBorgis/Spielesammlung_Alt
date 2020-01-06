@@ -1,6 +1,6 @@
 package LogIn;
 
-public class Reg {
+public class PasswortChecker {
 
     public int run(String passwort) {
         int sicherheitsstufe = 0;
@@ -9,19 +9,19 @@ public class Reg {
             sicherheitsstufe++;
         }
 
-        if(großbuchstaben(passwort)){
+        if (großbuchstaben(passwort)) {
             sicherheitsstufe++;
         }
 
-        if(kleinbuchstaben(passwort)){
+        if (kleinbuchstaben(passwort)) {
             sicherheitsstufe++;
         }
 
-        if(sonderzeichen(passwort)){
+        if (sonderzeichen(passwort)) {
             sicherheitsstufe++;
         }
 
-        if(zahlen(passwort)){
+        if (zahlen(passwort)) {
             sicherheitsstufe++;
         }
 
@@ -49,15 +49,15 @@ public class Reg {
 
         char[] array = passwort.toCharArray();
 
-        for(int i = 0; i <= passwort.length() - 1; i++){
-            if(Character.isUpperCase(array[i])){
+        for (int i = 0; i <= passwort.length() - 1; i++) {
+            if (Character.isUpperCase(array[i])) {
                 großbuchstaben++;
             }
         }
 
-        if(großbuchstaben >= 2){
+        if (großbuchstaben >= 2) {
             sicher = true;
-        }else{
+        } else {
             sicher = false;
         }
 
@@ -70,15 +70,15 @@ public class Reg {
 
         char[] array = passwort.toCharArray();
 
-        for(int i = 0; i <= passwort.length() - 1; i++){
-            if(Character.isLowerCase(array[i])){
+        for (int i = 0; i <= passwort.length() - 1; i++) {
+            if (Character.isLowerCase(array[i])) {
                 kleinbuchstaben++;
             }
         }
 
-        if(kleinbuchstaben >= 2){
+        if (kleinbuchstaben >= 2) {
             sicher = true;
-        }else{
+        } else {
             sicher = false;
         }
 
@@ -91,15 +91,15 @@ public class Reg {
 
         char[] array = passwort.toCharArray();
 
-        for(int i = 0; i <= passwort.length() - 1; i++){
-            if(!Character.isLetterOrDigit(array[i])){
+        for (int i = 0; i <= passwort.length() - 1; i++) {
+            if (!Character.isLetterOrDigit(array[i])) {
                 sonderzeichen++;
             }
         }
 
-        if(sonderzeichen >= 1){
+        if (sonderzeichen >= 1) {
             sicher = true;
-        }else{
+        } else {
             sicher = false;
         }
 
@@ -112,15 +112,15 @@ public class Reg {
 
         char[] array = passwort.toCharArray();
 
-        for(int i = 0; i <= passwort.length() - 1; i++){
-            if(!Character.isDigit(array[i])){
+        for (int i = 0; i <= passwort.length() - 1; i++) {
+            if (!Character.isDigit(array[i])) {
                 zahlen++;
             }
         }
 
-        if(zahlen >= 2){
+        if (zahlen >= 2) {
             sicher = true;
-        }else{
+        } else {
             sicher = false;
         }
 

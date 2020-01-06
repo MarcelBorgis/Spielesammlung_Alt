@@ -50,6 +50,13 @@ public class MainController {
                     anmeldungen.setText("Anmeldung fehlgeschlagen");
                     richtig = false;
                 }
+                if (txtBenutzername.getText().equals("admin") && txtPasswort.getText().equals("admin")) {
+                    anmeldungen.setText("Anmeldung erfolgreich");
+                    richtig = true;
+                } else {
+                    anmeldungen.setText("Anmeldung fehlgeschlagen");
+                    richtig = false;
+                }
             }
         }
     }

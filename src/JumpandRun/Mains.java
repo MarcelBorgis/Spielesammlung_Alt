@@ -10,6 +10,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.ImagePattern;
 import javafx.stage.Stage;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -38,11 +39,11 @@ public class Mains extends Application {
     private boolean canJump = true;
     private boolean punkte = false;
 
-    private Image bloecke = new Image("File:C:\\Eclipse\\workspace\\Spielesammlung\\src\\images\\bloecke.png");
-    private Image coinblocke = new Image("File:C:\\Eclipse\\workspace\\Spielesammlung\\src\\images\\Coinblock.png");
-    private Image marioR = new Image("File:C:\\Eclipse\\workspace\\Spielesammlung\\src\\images\\Mario_klein_rechts0.png");
-    private Image lavablock = new Image("File:C:\\Eclipse\\workspace\\Spielesammlung\\src\\images\\Lava.png");
-    private Image lavablock2 = new Image("File:C:\\Eclipse\\workspace\\Spielesammlung\\src\\images\\Lava2.png");
+    private Image bloecke = new Image("File:C:\\Workspace\\Spielesammlung_NEU\\src\\images\\bloecke.png");
+    private Image coinblocke = new Image("File:C:\\Workspace\\Spielesammlung_NEU\\src\\images\\Coinblock.png");
+    private Image marioR = new Image("File:C:\\workspace\\Spielesammlung_NEU\\src\\images\\Mario_klein_rechts0.png");
+    private Image lavablock = new Image("File:C:\\workspace\\Spielesammlung_NEU\\src\\images\\Lava.png");
+    private Image lavablock2 = new Image("File:C:\\workspace\\Spielesammlung_NEU\\src\\images\\Lava2.png");
     private ImagePattern imagePatternBloecke = new ImagePattern(bloecke);
     private ImagePattern imagePatterncoin = new ImagePattern(coinblocke);
     private ImagePattern imagePatternlavablock = new ImagePattern(lavablock);
@@ -94,10 +95,11 @@ public class Mains extends Application {
             }
         });
 
-        appRoot.setMinSize(1500,800);
+        appRoot.setMinSize(1500, 800);
         appRoot.getChildren().addAll(gameRoot, uiRoot);
     }
-// Steuerung des Charakters
+
+    // Steuerung des Charakters
     private void update() {
         if (isPressed(KeyCode.W) && player.getTranslateY() >= 5) {
 
@@ -223,12 +225,11 @@ public class Mains extends Application {
     public void spielStarten() {
         initContent();
 
-
         Scene scene = new Scene(appRoot);
         scene.setOnKeyPressed(event -> keys.put(event.getCode(), true));
         scene.setOnKeyReleased(event -> keys.put(event.getCode(), false));
         primaryStage.setTitle("Jump and Run");
-        primaryStage.getIcons().add(new Image("File:C:\\Eclipse\\workspace\\Spielesammlung\\src\\images\\Mario_klein_rechts0.png"));
+//        primaryStage.getIcons().add(new Image("...@\\src\\images\\Mario_klein_rechts0.png"));
         primaryStage.setScene(scene);
         primaryStage.show();
 //Events
@@ -244,9 +245,6 @@ public class Mains extends Application {
                 if (dialogEvent) {
                     dialogEvent = false;
                     keys.keySet().forEach(key -> keys.put(key, false));
-
-
-
                     running = false;
                     dialog.open();
                 }

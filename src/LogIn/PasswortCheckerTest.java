@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class RegTest {
+class PasswortCheckerTest {
 
-    Reg Reg = new Reg();
+    PasswortChecker PasswortChecker = new PasswortChecker();
 
     private String passwort = "^&b.`N[cv{nEx.qX?L?wp*w;GVDHfP-dG;pA;+<hhUhabd$h}kn%MQF6fv[\"LFtNC<N=-hB%=p9a)(94{VCFydwwa" +
             "@=8ucvPa!p,E[.!c72cLYkHn(j4waa$`(#_E}g=(WLjZZvPy]Du[_FW=Kc~FZwYY[5N<eP[P}_7Fm'[;fA?c?dwadwwsL" +
@@ -34,42 +34,35 @@ class RegTest {
 
     @Test
 
-public void laengenTest(){
-
-
-        assertTrue(Reg.laenge(passwort));
-        assertTrue(Reg.laenge("12345678"));
-        assertFalse(Reg.laenge("1234567"));
-        assertFalse(Reg.laenge(""));
-
+    public void laengenTest() {
+        assertTrue(PasswortChecker.laenge(passwort));
+        assertTrue(PasswortChecker.laenge("12345678"));
+        assertFalse(PasswortChecker.laenge("1234567"));
+        assertFalse(PasswortChecker.laenge(""));
     }
 
     @Test
     public void grossbuchstabenTest() {
-
-        assertTrue(Reg.großbuchstaben(passwort));
-        assertTrue(Reg.großbuchstaben("MuhammeD"));
-        assertFalse(Reg.großbuchstaben("Vincent-4132"));
-        assertFalse(Reg.großbuchstaben("-+"));
-
-
-
+        assertTrue(PasswortChecker.großbuchstaben(passwort));
+        assertTrue(PasswortChecker.großbuchstaben("MuhammeD"));
+        assertFalse(PasswortChecker.großbuchstaben("Vincent-4132"));
+        assertFalse(PasswortChecker.großbuchstaben("-+"));
     }
 
     @Test
     public void kleinbuchstabenTest() {
-        assertTrue(Reg.kleinbuchstaben(passwort));
-        assertTrue(Reg.kleinbuchstaben("Schmidt"));
-        assertFalse(Reg.kleinbuchstaben("BORGIs.-1646"));
-        assertFalse(Reg.kleinbuchstaben("*/"));
+        assertTrue(PasswortChecker.kleinbuchstaben(passwort));
+        assertTrue(PasswortChecker.kleinbuchstaben("Schmidt"));
+        assertFalse(PasswortChecker.kleinbuchstaben("BORGIs.-1646"));
+        assertFalse(PasswortChecker.kleinbuchstaben("*/"));
     }
 
     @Test
-    public void sonderzeichenTest(){
-        assertTrue(Reg.sonderzeichen(passwort));
-        assertTrue(Reg.sonderzeichen("Yannick-123"));
-        assertFalse(Reg.sonderzeichen("ufh16544"));
-        assertFalse(Reg.sonderzeichen("7987"));
+    public void sonderzeichenTest() {
+        assertTrue(PasswortChecker.sonderzeichen(passwort));
+        assertTrue(PasswortChecker.sonderzeichen("Yannick-123"));
+        assertFalse(PasswortChecker.sonderzeichen("ufh16544"));
+        assertFalse(PasswortChecker.sonderzeichen("7987"));
     }
 
 }

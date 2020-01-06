@@ -25,6 +25,9 @@ public class Hauptmenu extends Application {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        stage.setResizable(false);
+        stage.setMaxHeight(600);
+        stage.setMaxWidth(600);
     }
     public void jumpNRun() throws IOException {
         jumpNRuns.spielStarten();
