@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class MainController {
     private boolean richtig = false;
-    private Hauptmenu haputmenu = new Hauptmenu();
+    private Hauptmenu hauptmenu = new Hauptmenu();
     private Register register = new Register();
     @FXML
     private Label anmeldungen;
@@ -63,7 +63,7 @@ public class MainController {
 
     public void haupt() throws IOException {
         if (richtig) {
-            haputmenu.starten();
+            hauptmenu.starten();
             Main2.stage.close();
         }
         if (!richtig) {

@@ -20,7 +20,7 @@ public class Hauptmenu extends Application {
     private Pong ponge = new Pong();
 
     public void starten() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("haupt.fxml"));
         stage.setTitle("Hauptmenü");
         Scene scene = new Scene(root);
         stage.setScene(scene);
